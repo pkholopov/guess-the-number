@@ -23,7 +23,6 @@ function guessNumber(answer) {
         start = guess 
     }
     guess = start + Math.floor((end - start) / 2)
-    console.log(`Start: ${start}. End: ${end}`);
     showGuess(guess)
 }
 function showGuess(guess) {

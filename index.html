@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадыватель чисел</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game">
+        <div class="game_start">
+            <p>Загадай число от 1 до
+            <input type="number" name="end" value="100" min="100" max=""1000000000></p>
+            <button>Готово!</button>
+        </div>
+        <div class="game_main hide">
+            <p>Ты загадал число Х!</p>
+            <button data-answer="<">Нет, моё число меньше</button>
+            <button data-answer=">">Нет, моё число больше</button>
+            <button class="got_it">Верно!</button>
+        </div>
+        <div class="game_end hide">
+            <p>Твоё число Х! Как я сразу не догадался!</p>
+            <button>Загадать ещё одно число</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
+<div class=my_class"></div>
+<div class="my-class"></div>

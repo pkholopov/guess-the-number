@@ -3,7 +3,7 @@ $startBox   = document.querySelector('.game_start'),
 $mainBox    = document.querySelector('.game_main'),
 $endBox     = document.querySelector('.game_end'),
 
-guesPhrases = [`Ты загадал число`, 'Возможно, это', 'Предположу, что загаданное число — это', 'Думаю, искомое число —']
+guessPhrases = [`Ты загадал число`, 'Возможно, это', 'Предположу, что загаданное число — это', 'Думаю, искомое число —']
 
 let 
 start = 1,
@@ -26,7 +26,7 @@ function guessNumber(answer) {
     showGuess(guess)
 }
 function showGuess(guess) {
-    $mainBox.querySelector('p').innerHTML = `${guesPhrases[getRandom(0, guesPhrases.length - 1)]} <strong>${guess}</strong>!`
+    $mainBox.querySelector('p').innerHTML = `${guessPhrases[getRandom(0, guesPhrases.length - 1)]} <strong>${guess}</strong>!`
 }
 function endGame() {
     $endBox.querySelector('p').innerHTML = `Было загадано число <strong>${guess}</strong>! Как я сразу не догадался!`

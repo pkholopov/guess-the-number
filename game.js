@@ -26,7 +26,7 @@ function guessNumber(answer) {
     showGuess(guess)
 }
 function showGuess(guess) {
-    $mainBox.querySelector('p').innerHTML = `${guessPhrases[getRandom(0, guesPhrases.length - 1)]} <strong>${guess}</strong>!`
+    $mainBox.querySelector('p').innerHTML = `${guessPhrases[getRandom(0, guessPhrases.length - 1)]} <strong>${guess}</strong>!`
 }
 function endGame() {
     $endBox.querySelector('p').innerHTML = `Было загадано число <strong>${guess}</strong>! Как я сразу не догадался!`

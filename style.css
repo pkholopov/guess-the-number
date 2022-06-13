@@ -12,8 +12,7 @@ body {
     height: 100vh;
     overflow: hidden;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    place-items: center;
 }
 
 .game {
@@ -37,4 +36,9 @@ body {
     color:white;
     border-radius: 3px;
     background-color: rgb(0, 116, 248);
+}
+
+.game input {
+    font-size: xx-large;
+    border: none;
 }
